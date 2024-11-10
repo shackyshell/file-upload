@@ -22,7 +22,7 @@ export const uploadFile = async (
     import.meta.env.VITE_API_URL
   }/surveys/${organizationId}/${surveyId}/shares/${shareId}/preview-image`
   console.log('url', url)
-  await axios.post(url, formData, {
+  await axios.put(url, formData, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
