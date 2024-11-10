@@ -22,10 +22,10 @@ const FileList: React.FC<FileListProps> = ({ files, uploadingFiles }) => {
           </li>
         ))}
       </ul>
-      <h2>Uploading Files</h2>
+      {/* <h2>Uploading Files</h2>
       {uploadingFiles.map((file, index) => (
         <UploadProgress key={index} file={file} />
-      ))}
+      ))} */}
     </div>
   )
 }

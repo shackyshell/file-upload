@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { uploadFileInChunks } from '../../api/fileService'
+// import { uploadFileInChunks } from '../../api/fileService'
 
 interface UploadProgressProps {
   file: File
@@ -8,12 +8,12 @@ interface UploadProgressProps {
 const UploadProgress: React.FC<UploadProgressProps> = ({ file }) => {
   const [progress, setProgress] = useState(0)
 
-  useEffect(() => {
-    const upload = async () => {
-      await uploadFileInChunks(file, (p) => setProgress(p))
-    }
-    upload()
-  }, [file])
+//   useEffect(() => {
+//     const upload = async () => {
+//       await uploadFileInChunks(file, (p) => setProgress(p))
+//     }
+//     upload()
+//   }, [file])
 
   return (
     <div>
